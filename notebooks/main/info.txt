@@ -1,0 +1,20 @@
+1. Notebook: Urea_Price_Prediction_Daily_Processed.ipynb
+Objective:
+To perform a comprehensive Exploratory Data Analysis (EDA) and preprocessing of the historical urea price data. This foundational step is crucial for understanding the dataset's characteristics, patterns, and quality before proceeding to model development.
+
+Description:
+This notebook covers the initial and critical stages of the data science pipeline. It involves loading the raw daily urea price data, cleaning it by handling missing values and outliers, and performing feature engineering (such as extracting temporal features from the date). The core of the notebook is the visualization of the time series to identify key trends, seasonal patterns, and anomalies. The final output is a clean, processed dataset ready for building and training forecasting models.
+
+2. Notebook: urea_forecast_final.ipynb
+Objective:
+To develop, compare, and evaluate multiple machine learning models for forecasting urea prices, ultimately selecting and finalizing the best-performing model for predictions.
+
+Description:
+This notebook represents the core modeling phase of the project. It utilizes the preprocessed data to train and test various machine learning algorithms (potentially including models like Linear Regression, Random Forest, XGBoost, or Prophet). The process includes splitting the data into training and testing sets, training the models, and evaluating their performance using standard metrics like MAE, MSE, and RMSE. The model with the best performance on the test set is selected as the final model and is used to generate future price forecasts.
+
+3. Notebook: Urea_Price_Forecast_SARIMAX.ipynb
+Objective:
+To implement and analyze a SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous regressors) model, a specialized statistical approach for time series forecasting that explicitly captures seasonal patterns and trends.
+
+Description:
+This notebook provides a deep dive into a sophisticated statistical forecasting method. It focuses on modeling the urea price time series using SARIMAX, which is particularly effective for data with seasonal components. The workflow includes checking the stationarity of the series, identifying the optimal model parameters (p, d, q, P, D, Q, s), and fitting the model. A key step is conducting model diagnostics to ensure the residuals are white noise, validating the model's adequacy. The final model is then used for forecasting and its performance is benchmarked against standard error metrics.
